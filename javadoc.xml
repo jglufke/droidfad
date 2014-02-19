@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="true" classpath="." destdir="C:\LocalData\droidfad_webpage\web\html\api" doctitle="DROID-FAD 0.1.0 - Framework for Application Development" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.droidfad,com.droidfad.event,com.droidfad.valueMapping.basic,com.droidfad.iframework.event,com.droidfad.classloading,com.droidfad.iframework.valuemapping,com.droidfad.util,com.droidfad.valueMapping,com.droidfad.iframework.service,com.droidfad.service,com.droidfad.iframework.data,com.droidfad.view,com.droidfad.data" source="1.6" sourcepath="src;gen" splitindex="true" use="true" version="true"/>
+    </target>
+</project>

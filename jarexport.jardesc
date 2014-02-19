@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="a_droidfad/export/droidfad.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/a_droidfad/jarexport.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="false" exportJavaFiles="false" exportOutputFolder="true">
+        <folder path="/a_droidfad/res"/>
+        <folder path="/a_droidfad/assets"/>
+        <folder path="/a_droidfad/bin"/>
+        <folder path="/a_droidfad/.settings"/>
+        <javaElement handleIdentifier="=a_droidfad/src"/>
+        <javaElement handleIdentifier="=a_droidfad/gen"/>
+        <javaElement handleIdentifier="=a_droidfad/droidfad_base_src"/>
+        <folder path="/a_droidfad/doc"/>
+    </selectedElements>
+</jardesc>
