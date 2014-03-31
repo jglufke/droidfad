@@ -6,7 +6,6 @@ package com.droidfad;
 import java.io.File;
 import java.lang.Thread.UncaughtExceptionHandler;
 
-import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
 
@@ -23,26 +22,19 @@ import com.droidfad.service.ServiceAdministrator;
 import com.droidfad.util.LogWrapper;
 
 /**
- * 
- *
- * Copyright 2011 Jens Glufke jglufke@googlemail.com
+Copyright 2014 Jens Glufke
 
-   Licensed under the DROIDFAD license (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-       http://www.droidfad.com/html/license/license.htm
+    http://www.apache.org/licenses/LICENSE-2.0
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.<br>
- * -----------------------------------------------------------------------<br>
- * this class has to be called with initialization of the DroidFad framework.
- * see http://www.droidfad.com/ for details. It is possible to change the
- * directory where the persistency has to be located if you use the appropriate
- * init method
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
  */
 public class DroidFad implements IContextProvider {
 
@@ -119,14 +111,14 @@ public class DroidFad implements IContextProvider {
 	 *
 	 */
 	public synchronized static void init(Context pContext, MemoryType pMemoryType) {
-		
+
 		if(pContext == null) {
 			throw new IllegalArgumentException("parameter pContext must not be null");
 		}
 		if(pMemoryType == null) {
 			throw new IllegalArgumentException("parameter pMemoryType must not be null");
 		}
-		
+
 		String lPersistencyRootPath = null;
 		switch(pMemoryType) {
 		case external:
@@ -150,8 +142,8 @@ public class DroidFad implements IContextProvider {
 			LogWrapper.setLogImpl(logger);
 			uncaughtExceptionHandler = Thread.getDefaultUncaughtExceptionHandler();
 			Thread.setDefaultUncaughtExceptionHandler(new CustomExceptionHandler());
-			
-			
+
+
 			LogWrapper.i(LOGTAG, "============================================");
 			LogWrapper.i(LOGTAG, "init =======================================");
 			LogWrapper.i(LOGTAG, "============================================");

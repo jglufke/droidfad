@@ -28,35 +28,19 @@ import com.droidfad.iframework.valuemapping.IValueMapperUser;
 import com.droidfad.util.ReflectionUtil;
 
 /**
- * 
- *
- * Copyright 2011 Jens Glufke jglufke@googlemail.com
+Copyright 2014 Jens Glufke
 
-   Licensed under the DROIDFAD license (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-       http://www.droidfad.com/html/license/license.htm
+    http://www.apache.org/licenses/LICENSE-2.0
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.<br><br>
- * -----------------------------------------------------------------------<br><br>
- * class that can be used to edit instances of subclasses of ADao. see
- *  http://www.droidfad.com/html/ui/ui.htm for an usage example.
- *  Attributes of a ADao subclass instance that should be edited by Editor
- *  have to be indicated by the @EditableByUI annotation at the getter or
- *  setter method. E.g.<br>
- *	    @EditableByUI ( sortingTag="01", guiName="R.string.HostEntryGuiNameHost" )<br>
- *      public String getHostName()) { .....<br>
- * Editor tries to resolve the guiName parameter of the @EditableByUI annotation
- * with the resource class that has been passed with the constructor, e.g.<br>
- * 		final Editor          lEditor   = new Editor(hostEntry, R.string.class);<br>
- * If the resource class is null or the guiName can not be resolved the guiName
- * string itself will be used as attribute name.
- * see ({@link EditableByUI}) 
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
  */
 public class Editor  {
 
